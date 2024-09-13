@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - iOS Style Modals in CSS &amp; Javascript</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="main">
+  <div class="topbar">
+    <a href="#">AG</a>
+    <h2>Main Navigation Bar</h2>
+    <button id="main-topbar-btn">+</button>
+  </div>
+  <div class="content">
+    <h1>Main Screen</h1>  
+  </div> 
+</div>
+<!--  Slide Up Modal -->
+<div class="slide-up-modal" id="slide-up-modal">
+  <div class="modal-content">
+    <div class="modal-content-topbar">
+      <button class="close-slide-up-modal-btn" id="close-slide-up-modal-btn">Cancel</button>
+      <h2>Slide Up Modal Nav Bar</h2>
+    </div>
+    <div class="modal-content-body">
+      <button id="show-slide-left-modal-1-btn">Show Slide-Left Modal &nbsp; > </button>
+    </div>
+  </div>
+</div>
+<!--  End Slide Up Modal -->
+
+<!-- Slide Left Modal - 1 -->
+<div class="slide-left-modal" id="slide-left-modal-1">
+  <div class="modal-content">
+    <div class="modal-content-topbar">
+      <button class="cancel-slide-left-modal-btn" id="close-slide-left-modal-1-btn"> &lt; </button>
+      <h2>Slide Left Modal 1 Nav Bar</h2>
+    </div>
+    <div class="modal-content-body">
+      <h1>Slide Left modal 1</h1>
+      <button id="show-slide-left-modal-2-btn">Show Slide-Left Modal 2 &nbsp; > </button>
+    </div>
+  </div>
+</div>
+<!-- End Slide Left Modal - 1 -->
+
+<!-- Slide Left Modal - 2 -->
+<div class="slide-left-modal" id="slide-left-modal-2">
+  <div class="modal-content">
+    <div class="modal-content-topbar">
+      <button class="cancel-slide-left-modal-btn" id="close-slide-left-modal-2-btn"> &lt; </button>
+      <h2>Slide Left Modal 2 Nav Bar</h2>
+      <button class="close-all-modals-btn" id="close-all-modals-btn">Close All</button>
+    </div>
+    <div class="modal-content-body">
+      <h1>Slide Left modal 2</h1>
+    </div>
+  </div>
+</div>
+<!-- End Slide Left Modal - 2 -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

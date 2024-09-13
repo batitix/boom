@@ -1,0 +1,200 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+}
+/* Note: Center the h1 vertically and horizontally by setting the display property to flex in the parent (.main) and setting the margin of child (h1) to auto */
+
+/* Main Screen */
+.main {
+  height: 100vh;
+  background-color: #C3F73A;
+}
+.topbar {
+  color:white;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 80px;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-color: #1C1018;
+}
+.topbar a {
+  background-color: grey;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  padding-top: 12px;
+  padding-left: 10px;
+  align-self: center;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.topbar h2 {
+  align-self: center;
+  justify-self: center;
+}
+
+.topbar button {
+  height: 40px;
+  width: 40px;
+  align-self:center;
+  justify-self: flex-end;
+  margin-right: 10px;
+  border-radius: 50%;
+  font-size: 32px;
+  background-color: green;
+  color:white;
+  border: none;
+  outline:none;
+  cursor:pointer;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+.content h1 {
+  margin: auto;
+}
+/*  End Main Screen */
+
+/* Common Modal Styles */
+.modal-content-topbar {
+  display:grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 80px;
+  background-color: #1C1018;
+  color:white;
+  align-content: center;
+}
+
+.modal-content-topbar h2 {
+  align-self: center;
+  justify-self: center;
+}
+
+.modal-content-body {
+  margin: 100px auto;
+  text-align: center;
+}
+
+/* End Common Modal Styles */
+
+/* Slide Up Modal */
+.slide-up-modal {
+  background-color: rgba(9, 77, 146, 1);
+  position: fixed;
+  overflow: auto;
+  height: 100vh;
+  top: 100%;
+  left: 0;
+  right: 0;
+  transition: transform 0.5s ease-in-out 0s;
+  z-index: 110;
+}
+
+.close-slide-up-modal-btn {
+  justify-self: flex-start;
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color:white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+}
+.close-slide-up-modal-btn:hover,
+.close-slide-up-modal-btn:focus {
+  text-decoration: underline;
+}
+
+/*  End Slide Up Modal */
+
+/*  Slide Left Modal */
+.slide-left-modal {
+  position: fixed;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  right: 0;
+  transition: transform 0.5s ease-in-out 0s;
+  z-index: 120;
+}
+
+
+
+.cancel-slide-left-modal-btn {
+  justify-self: flex-start;
+  margin-left: 15px;
+  font-size: 36px;
+  background-color: transparent;
+  color:white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+}
+
+.close-all-modals-btn {
+  justify-self: flex-end;
+  margin-right: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color:white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+}
+.close-all-modals-btn:hover,
+.close-all-modals-btn:focus {
+  text-decoration: underline;
+}
+/*  End Slide Left Modal */
+
+#show-slide-left-modal-1-btn, #show-slide-left-modal-2-btn {
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 5px;
+  color: white;
+  padding: 20px 30px;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+#show-slide-left-modal-1-btn:hover,
+#show-slide-left-modal-1-btn:focus,
+#show-slide-left-modal-2-btn:hover,
+#show-slide-left-modal-2-btn:focus{
+  border: 2px solid green;
+}
+
+#slide-left-modal-1 {
+  background-color: rgba(240, 168, 104, 1);
+}
+
+#slide-left-modal-2 {
+  background-color: rgba(33, 78, 52, 1);
+}
